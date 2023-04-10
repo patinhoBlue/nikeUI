@@ -11,7 +11,7 @@
 
 .margin-main {
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1100px;
   width: 100%;
 }
 
@@ -21,19 +21,19 @@ body {
 }
 
 .main-body {
-  position: fixed;
+  /*  position: fixed; */
   display: flex;
   width: 100%;
   height: 100%;
   background: radial-gradient(103.48% 54.84% at 58.34% 101.87%, #2e2d2d 7.01%, rgba(37, 36, 36, 0.0504096) 69.79%, rgba(109, 107, 107, 0) 80.73%);
 }
 .main-body .bar-vertical {
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(179.97deg, #262829 80.35%, rgba(38, 40, 41, 0) 99.97%);
 }
 .main-body .bar-vertical .tenor-bar {
   width: 100%;
-  padding: 30px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,4 +74,161 @@ body {
 .main-body .part-lateral .menu nav ul li a {
   text-decoration: none;
   color: white;
+}
+.main-body .part-lateral .menu .menu-mobile {
+  display: none;
+}
+.main-body .part-lateral .menu .menu-mobile button {
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+  width: 30px;
+  height: 30px;
+}
+.main-body .part-lateral .menu .menu-mobile button hr {
+  margin-top: 2px;
+  padding: 1.5px;
+  background-color: #ffffff;
+}
+.main-body .part-lateral .body-lateral {
+  display: flex;
+  padding-top: 50px;
+  width: 95%;
+}
+.main-body .part-lateral .body-lateral .text h1 {
+  color: var(--primary--color);
+  font-size: 130px;
+  font-weight: 900;
+  font-style: italic;
+}
+.main-body .part-lateral .body-lateral .text h4 {
+  color: var(--primary--color);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+.main-body .part-lateral .body-lateral .text p {
+  padding-top: 25px;
+  text-align: justify;
+  color: #5f6366;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+.main-body .part-lateral .body-lateral .text button {
+  cursor: pointer;
+  margin-top: 90px;
+  background-color: #42505d;
+  width: 220px;
+  height: 65px;
+  border-radius: 25px;
+  border: none;
+  font-size: 25px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.main-body .part-lateral .body-lateral .image img {
+  width: 450px;
+}
+@media screen and (max-width: 1200px) {
+  .main-body .bar-vertical .tenor-bar {
+    padding: 15px;
+  }
+  .main-body .bar-vertical .tenor-bar img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .main-body .part-lateral .body-lateral {
+    flex-direction: column;
+  }
+  .main-body .part-lateral .body-lateral .text {
+    text-align: center;
+  }
+  .main-body .part-lateral .body-lateral .text button {
+    margin-top: 60px;
+  }
+  .main-body .part-lateral .body-lateral .image {
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 720px) {
+  .main-body .bar-vertical .tenor-bar img {
+    width: 55px;
+  }
+  .main-body .bar-vertical .tenor-bar h1 {
+    font-size: 20px;
+  }
+  .main-body .part-lateral .menu {
+    justify-content: right;
+  }
+  .main-body .part-lateral .menu nav {
+    display: none;
+  }
+  .main-body .part-lateral .menu .menu-mobile {
+    display: block;
+    padding-right: 10px;
+  }
+  .main-body .part-lateral .body-lateral .text h1 {
+    font-size: 100px;
+  }
+  .main-body .part-lateral .body-lateral .text h4 {
+    font-size: 20px;
+  }
+  .main-body .part-lateral .body-lateral .text p {
+    font-size: 15px;
+  }
+  .main-body .part-lateral .body-lateral .text button {
+    scale: 0.8;
+  }
+  .main-body .part-lateral .body-lateral .image img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-body .bar-vertical .tenor-bar {
+    padding: 5px;
+  }
+  .main-body .bar-vertical .tenor-bar img {
+    width: 35px;
+  }
+  .main-body .bar-vertical .tenor-bar h1 {
+    font-size: 15px;
+  }
+  .main-body .part-lateral .body-lateral .text h1 {
+    font-size: 80px;
+  }
+  .main-body .part-lateral .body-lateral .text h4 {
+    font-size: 18px;
+  }
+  .main-body .part-lateral .body-lateral .text p {
+    font-size: 15px;
+  }
+  .main-body .part-lateral .body-lateral .text button {
+    scale: 0.7;
+  }
+  .main-body .part-lateral .body-lateral .image img {
+    width: 270px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .main-body .part-lateral .body-lateral .text h1 {
+    font-size: 65px;
+  }
+  .main-body .part-lateral .body-lateral .text h4 {
+    font-size: 18px;
+  }
+  .main-body .part-lateral .body-lateral .text p {
+    font-size: 15px;
+  }
+  .main-body .part-lateral .body-lateral .text button {
+    scale: 0.7;
+  }
+  .main-body .part-lateral .body-lateral .image img {
+    width: 240px;
+  }
 }/*# sourceMappingURL=styles.css.map */
